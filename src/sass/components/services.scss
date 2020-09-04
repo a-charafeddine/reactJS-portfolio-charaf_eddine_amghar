@@ -1,0 +1,73 @@
+/*
+    Section 03 Services
+*/
+@import '../utilities/allUtilities';
+
+section.services {
+    .service-item {
+        padding: rem(20);
+        background-color: $color--02;
+        border-left: rem(2) solid $color--05;
+        .head-item {
+            margin-bottom: rem(30);
+            margin-left: rem(-30);
+            .content-head {
+                position: relative;
+                padding-top: rem(30);
+                span {
+                    font-family: $Oswald-N-400;
+                    color: $color--05;
+                    transition: 0.3s ease all;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                h4 {
+                    font-family: $Oswald-N-700;
+                    margin-bottom: 0;
+                }
+            }
+            .icon-head{
+                width: rem(40);
+                height: rem(40);
+                background-color: $color--05;
+                border-radius: 1px;
+                border: 2px solid $color--05;
+                transition: 0.3s all ease;
+                margin-right: rem(15);
+                svg{
+                    width: rem(22);
+                    height: rem(22);
+                }
+            }
+        }
+
+        .body-item {
+            max-height: rem(190);
+            overflow: auto;
+            span{
+                &.special-word{
+                    color: $color--05;
+                    font-family: $Oswald-N-500;
+                    letter-spacing: rem(1);
+                }
+            }
+        }
+        &:hover{
+            .head-item {
+                .icon-head{
+                    background-color: $color--02;
+                }
+                .content-head {
+
+                    span {
+                        font-family: $Oswald-N-700;
+                        letter-spacing: 2px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

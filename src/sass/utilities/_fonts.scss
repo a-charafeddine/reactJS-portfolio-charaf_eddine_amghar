@@ -1,0 +1,167 @@
+/*
+    Font Family Rosario 
+*/
+
+@font-face {
+    font-family: 'Rosario-I-500';
+    src: url('../../Fonts/Rosario/Rosario-MediumItalic.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-MediumItalic.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-N-500';
+    src: url('../../Fonts/Rosario/Rosario-Medium.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-Medium.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-I-700';
+    src: url('../../Fonts/Rosario/Rosario-BoldItalic.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-BoldItalic.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-I-600';
+    src: url('../../Fonts/Rosario/Rosario-SemiBoldItalic.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-SemiBoldItalic.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-I-400';
+    src: url('../../Fonts/Rosario/Rosario-Italic.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-Italic.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-I-300';
+    src: url('../../Fonts/Rosario/Rosario-LightItalic.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-LightItalic.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-N-600';
+    src: url('../../Fonts/Rosario/Rosario-SemiBold.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-SemiBold.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-N-400';
+    src: url('../../Fonts/Rosario/Rosario-Regular.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-Regular.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-N-300';
+    src: url('../../Fonts/Rosario/Rosario-Light.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-Light.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rosario-N-700';
+    src: url('../../Fonts/Rosario/Rosario-Bold.woff2') format('woff2'),
+        url('../../Fonts/Rosario/Rosario-Bold.woff') format('woff'),
+        url('../../Fonts/Rosario/Rosario-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+    Font Family Oswald
+*/
+
+@font-face {
+    font-family: 'Oswald-N-700';
+    src: url('../../Fonts/Oswald/Oswald-Bold.woff2') format('woff2'),
+        url('../../Fonts/Oswald/Oswald-Bold.woff') format('woff'),
+        url('../../Fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald-N-500';
+    src: url('../../Fonts/Oswald/Oswald-Medium.woff2') format('woff2'),
+        url('../../Fonts/Oswald/Oswald-Medium.woff') format('woff'),
+        url('../../Fonts/Oswald/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald-N-300';
+    src: url('../../Fonts/Oswald/Oswald-Light.woff2') format('woff2'),
+        url('../../Fonts/Oswald/Oswald-Light.woff') format('woff'),
+        url('../../Fonts/Oswald/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald-N-200';
+    src: url('../../Fonts/Oswald/Oswald-ExtraLight.woff2') format('woff2'),
+        url('../../Fonts/Oswald/Oswald-ExtraLight.woff') format('woff'),
+        url('../../Fonts/Oswald/Oswald-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald-N-400';
+    src: url('../../Fonts/Oswald/Oswald-Regular.woff2') format('woff2'),
+        url('../../Fonts/Oswald/Oswald-Regular.woff') format('woff'),
+        url('../../Fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald-N-600';
+    src: url('../../Fonts/Oswald/Oswald-SemiBold.woff2') format('woff2'),
+        url('../../Fonts/Oswald/Oswald-SemiBold.woff') format('woff'),
+        url('../../Fonts/Oswald/Oswald-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

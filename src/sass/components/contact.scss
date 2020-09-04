@@ -1,0 +1,28 @@
+/*
+    Section 05 Contact
+*/
+@import '../utilities/allUtilities';
+
+section.contact {
+    .block--contact {
+        display: block;
+        max-width: 50%;
+        border: 1px solid $color--05;
+        margin: rem(50) auto 0;
+        background-color: $color--07;
+    }
+
+    h2 {
+        margin-bottom: 100px;
+    }
+
+    .row {
+        .col-md-6 {
+            
+            @include media-breakpoint-down(sm) {
+                margin-bottom: rem(30);    
+            }
+            
+        }
+    }
+}
