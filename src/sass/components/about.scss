@@ -1,0 +1,16 @@
+/*
+    Section 02 About
+*/
+@import '../utilities/allUtilities';
+
+section.about{
+    background-color: $color--01;
+    @include media-breakpoint-down(md) {
+        .row{
+            .col-lg-5{
+                order: -1;
+                margin-bottom: rem(50);
+            }
+        }
+    }
+}

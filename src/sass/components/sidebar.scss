@@ -1,0 +1,194 @@
+/*
+    Section Sidebar
+*/
+
+@import '../utilities/allUtilities';
+
+.sidebar {
+    width: rem(300);
+    background-color: $color--07;
+    border-right: rem(3) solid $color--02;
+    height: 100vh;
+    color: $color--01;
+    font-family: $Rosario-N-400;
+    padding: rem(20) rem(30);
+    transition: 0.5s ease;
+    position: fixed;
+    left: rem(-300);
+    z-index: 2;
+
+    @include media-breakpoint-down(md) {
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: rem(30) 20%;
+    }
+}
+
+
+nav.nav {
+    &-menu-sidebar {
+        @include media-breakpoint-down(md) {
+            margin: rem(30) 0;
+        }
+
+        li {
+            margin-bottom: rem(15);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-size: rem(14);
+            letter-spacing: rem(2);
+        }
+    }
+}
+
+span.key-sidebar {
+    width: rem(35);
+    height: rem(35);
+    background-color: $color--05;
+    position: absolute;
+    top: rem(20);
+    right: rem(-3);
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform: rotateY(0);
+    color: $color--01;
+    padding: rem(5);
+    border: 1px solid $color--05;
+
+    @include media-breakpoint-down(md) {
+        top: rem(30);
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 36px;
+        height: 24px;
+
+        &__inner,
+        &__hidden {
+            top: 50%;
+
+            &,
+            &:before,
+            &:after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: $white;
+                border-radius: 4px;
+                position: absolute;
+                transition-property: transform, opacity;
+                transition-timing-function: ease;
+                transition-duration: 0.4s;
+            }
+        }
+
+        &__inner {
+            transform: translate(5px, -50%);
+            opacity: 1;
+
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: translate(-5px, 0);
+            }
+
+            &:after {
+                top: 10px;
+            }
+
+            &:before {
+                top: -10px;
+            }
+        }
+
+        &__hidden {
+            opacity: 0;
+            transform: translate(51px, -50%);
+
+            &:before,
+            &:after {
+                transform: translate(102px, 0);
+            }
+
+            &:after {
+                top: 10px;
+            }
+
+            &:before {
+                top: -10px;
+            }
+        }
+    }
+
+    &.close-key {
+        .hamburger {
+            &__inner {
+                display: none;
+            }
+
+            &__hidden {
+                opacity: 1;
+                transform: rotate(45deg);
+
+                &:after {
+                    transform-origin: center;
+                    transform: translate(0, -10px) rotate(0);
+                }
+
+                &:before {
+                    transform: translate(0, 10px) rotate(90deg);
+                    transform-origin: center;
+                }
+            }
+        }
+    }
+
+    &.open-key {
+        right: rem(-35);
+
+        @include media-breakpoint-down(md) {
+            top: 100%;
+            right: rem(20);
+        }
+
+        &:hover {
+            .hamburger {
+                &__inner {
+                    transform: translate(-51px, 50%);
+                    opacity: 0;
+
+                    &:after,
+                    &:before {
+                        transform: translate(102px, 0);
+                        opacity: 0;
+
+                    }
+                }
+
+                &__hidden {
+                    opacity: 1;
+                    transform: translate(0, -50%);
+                    display: block;
+
+                    &:after,
+                    &:before {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
+    }
+}

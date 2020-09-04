@@ -1,0 +1,88 @@
+/*
+    Loader
+*/
+
+@import '../utilities/allUtilities';
+
+.container-loader {
+    position: fixed;
+    background: rgba($color--07, .7);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.Box {
+    position: relative;
+    width: 93px;
+    height: 93px;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    top: 50%;
+    left: 50%;
+
+    span {
+        width: 30px;
+        height: 30px;
+        background: $color--05;
+        box-sizing: content-box;
+        margin: .5px;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        animation: Loader 2s linear infinite;
+
+        &:nth-child(3) {
+            animation-delay: .8s;
+        }
+
+        &:nth-child(2),
+        &:nth-child(6) {
+            animation-delay: .6s;
+        }
+
+        &:nth-child(1),
+        &:nth-child(5),
+        &:last-child {
+            animation-delay: .4s;
+        }
+
+        &:nth-child(4),
+        &:nth-child(8) {
+            animation-delay: .2s;
+        }
+
+        &:nth-child(7) {
+            animation-delay: 0s;
+        }
+    }
+}
+
+
+
+@keyframes Loader {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+}

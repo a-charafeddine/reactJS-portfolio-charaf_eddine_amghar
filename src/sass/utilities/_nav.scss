@@ -1,0 +1,18 @@
+
+/*
+    Navigations
+*/
+
+/*navigation Tab*/
+
+.nav-tabs {
+    border: none;
+    display: block;
+    
+    li {
+        a {
+            display: block;
+            padding: rem(10) rem(20);
+        }
+    }
+}
